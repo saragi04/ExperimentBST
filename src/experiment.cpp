@@ -54,7 +54,7 @@ int main() {
             nodesLeft += arbol.get_left_nodes();
             nodesRight += arbol.get_right_nodes();
 
-            characteristics(arbol);
+            //characteristics(arbol);
             cout << endl;
     }
 
