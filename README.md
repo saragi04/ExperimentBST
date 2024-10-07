@@ -11,7 +11,7 @@ En un vector, insertar ordenadamente un total de 100 animales diferentes, para p
 
 ### MÉTODO DE SOLUCIÓN
 
-Primeramente se implementaron las estructuras de datos que se debían utilizar para realizar el experimento que serían el árbol de búsqueda binaria y el vector para almacenar los datos inicialmente. Después de esto procedemos a la búsqueda por medio de la IA de los 100 animales que se debían incluir en el vector, se ubicaron en un archivo css para poder ingresarlos al vector por medio de operaciones con archivos en C++.
+Primeramente se implementaron las estructuras de datos que se debían utilizar para realizar el experimento que serían el árbol de búsqueda binaria y el vector para almacenar los datos inicialmente. Después de esto procedemos a la búsqueda por medio de la IA de los 100 animales que se debían incluir en el vector, se ubicaron en un archivo csv para poder ingresarlos al vector por medio de operaciones con archivos en C++.
 
 Después de que estos se ingresaran, se utilizó el método de ordenamiento implementado en la estructura de datos "Vector", el cual funciona específicamente con el método quickSort, esto para tener los elementos ordenados en el vector como se pedía inicialmente en experimento. 
 
