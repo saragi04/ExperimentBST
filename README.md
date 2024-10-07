@@ -26,9 +26,18 @@ Después de que todos los elementos se hayan insertado en el árbol y el vector 
 
 ### CÓDIGO
 
-- Código de la estrucura "Vector.hh": <>
-- Código de la estrucutar "bst.hh": <>
-- Código principal del experimento: <>
+- Código de la estrucura vector: ["Vector.hh"](https://github.com/saragi04/ExperimentBST/blob/5c85673974b24f36839f3ca6f9a1d1f752a065b6/src/vector.hh)
+
+- Código de la estrucutar "bst.hh": ["bst.hh"](https://github.com/saragi04/ExperimentBST/blob/5c85673974b24f36839f3ca6f9a1d1f752a065b6/src/bst.hh)
+
+- Código principal del experimento: ["experiment.cpp"](https://github.com/saragi04/ExperimentBST/blob/5c85673974b24f36839f3ca6f9a1d1f752a065b6/src/experiment.cpp)
 
 ### CONCLUSIONES 
 
+- *ALTURA DEL ÁRBOL:* Sabemos que la áltura teóricamente esperada de un árbol se puede definir a base del logaritmo base 2 del número de nodos que presenta el mismo árbol, si lo hacemos con la cantidad que manejabamos esta vez, obteníamos que la altura "perfecta" la podíamos encontrar entre 7 y 8 niveles, mientras que en el promedio de niveles que se obtuvo en el experimento, fue de 13, lo que claramente implica que el árbol se encuentre desbalanceado y con menos hojas de las esperadas según la teoría de un árbol balanceado.
+
+- *CANTIDAD DE HOJAS:* Como bien se hizo mención en el punto anterior, en el promedio de las hojas de los árboles obtenidos en el experimento fue un 30% menos que las esperadas, teniendo en cuenta que en un árbol balanceado, la cantidad de hojas corresponde a la mitad de la cantidad de elementos que se encuentren en el árbol. 
+
+- *DESBALANCE:* A pesar de que en el promedio de la cantidad de nodos tanto a la izquierda como a la derecha parece estar bien distribuida, si lograbamos diferenciar en cada árbol especificamente, obteníamos de que existía una gran diferencia entre esta cantidad de nodos, en los peores casos se obtuvo: derecha 13, 80; izquierda 86, 19, respectivamente. Con esto, lo que podemos esperar es una ineficiencia en las operaciones del árbol. 
+
+Dichas estas 3 conclusiones, podemos determinar de que la inserción aleatoria de elementos en un árbol de búsqueda binaria simplemente nos lleva a la ineficiencia del mismo, es básicamente desaprovechar la potencia en cuanto velocidad de búsqueda que estos árboles presentan, sin dejar a un lado la característica que poseen de inserción eficiente también.
