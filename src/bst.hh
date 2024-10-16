@@ -13,12 +13,6 @@ class BST {
             public:
                 Node() : data(), left(nullptr), right(nullptr) {}
                 Node(T data1) : data(data1), left(nullptr), right(nullptr) {}
-                destructor(Node* node){ 
-                    if( node == nullptr ){ return; }
-                    destructor(node->getLeft());
-                    destructor(node->getRight());
-                    delete node;
-                }
 
                 Node* getLeft() { return left;}
 
@@ -132,6 +126,13 @@ class BST {
             }
         }
 
+        void destructor(Node* node){ 
+            if( node == nullptr ){ return; }
+            destructor(node->getLeft());
+            destructor(node->getRight());
+            delete node;
+        }
+
     public:
         Node* root; 
         BST() : root(nullptr) {} 
@@ -139,8 +140,12 @@ class BST {
 
         bool empty() { return root == nullptr; }
 
-        void insert(T data){
-            insert(data, root);
+        void insert(T data) {
+            if (empty()) {
+                root = new Node(data);
+            } else {
+                insert(data, root);
+            }
         }
 
         unsigned int get_size(){

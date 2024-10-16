@@ -112,12 +112,13 @@ public:
 
     void remove(unsigned int target) {
         if (target >= size) return; 
+
         for (unsigned int i = target; i < size - 1; i++) {
             storage[i] = storage[i + 1];
         }
         size--;
     }
-
+    
     void insert(const T& elem, unsigned int pos) {
         if (pos > size) return; // Asegura que no se inserte fuera de límites
         push_back(elem);
